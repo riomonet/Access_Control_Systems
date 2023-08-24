@@ -1,0 +1,20 @@
+
+Project:  Access Control Systems, design and Implementation
+
+Initial Brain Storming of relevate terms and phrases:
+
+	:Access, control, vehicle, authorization, authorized, pedestrian,
+	entrance, exit, gate, lock, survailance, guest, visitor,
+	resident,  86'd, forbidden, prevention, alert, recording,
+	logging, system, permissions, schedule, motor, maglock,
+	video, camera, license, registration, identification, temporary
+
+: Working Glossary Terms -
+
+: The Four Questions - 
+	- Where are you ?
+	- What do you know?
+	- Where are you going ?
+	- Whad do you need to know ?
+
+	
