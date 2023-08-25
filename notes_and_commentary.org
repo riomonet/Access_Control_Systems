@@ -1,4 +1,3 @@
-
 Project:  Access Control Systems, design and Implementation
 
 : Initial Brain Storming of relevate terms and phrases:
@@ -9,7 +8,7 @@ Project:  Access Control Systems, design and Implementation
 	logging, system, permission, schedule, motor, maglock,
 	video, camera, license, registration, identification, temporary,
 	car, bicycle, vendor, customer, transient, delivery, mode of transportation.
-	client, 
+	client, valve, device, person, location, service
 
 
 : Initital questions
@@ -24,6 +23,35 @@ are individual devices authorized?
 are we readgin license plates?
 who has access to where?
 how do entered entitiies exit ?
+are we gonna use ai?
+is there a database?
+is it sql?  mongo db or postgres? firebase? graphql?
+what is the front end?			react/react native
+is there an administraor panel?
+How do we store credentials?
+do credentials folllow the person or the device?
+how do we give temporary credentials?
+how many different access locations are there?
+are we gonna do facial recognition?
+Is there gonna be app where someon can tap a button?
+Is there gonna be a way for persons to gain temporrary access by
+	registering and paying a fee?
+Are we gonna collect fee's?
+are we going to monitor vehicles within the gates?
+what is our tech stack?
+are we going to write an app for mobile?
+are we going to use uSwitch control station
+are we going to controll access to bathrooms?
+are we going to charge for parking?
+are we gonna be able to integrate this application
+	with other modules for property management?
+	can this be a micro service?
+
+how are we going to authenticate admistrators?
+are we going to subcontract authentication?
+are we going to use cloud servers or self host?
+are we gonna use node? express?
+Is the whole application going to be written in javascript?
 
 
 
