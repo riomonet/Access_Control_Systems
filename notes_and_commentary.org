@@ -1,13 +1,31 @@
 
 Project:  Access Control Systems, design and Implementation
 
-Initial Brain Storming of relevate terms and phrases:
+: Initial Brain Storming of relevate terms and phrases:
 
-	:Access, control, vehicle, authorization, authorized, pedestrian,
+	Access, control, vehicle, authorization, authorized, pedestrian,
 	entrance, exit, gate, lock, survailance, guest, visitor,
 	resident,  86'd, forbidden, prevention, alert, recording,
-	logging, system, permissions, schedule, motor, maglock,
-	video, camera, license, registration, identification, temporary
+	logging, system, permission, schedule, motor, maglock,
+	video, camera, license, registration, identification, temporary,
+	car, bicycle, vendor, customer, transient, delivery, mode of transportation.
+	client, 
+
+
+: Initital questions
+who is allowed ?
+what mode of transportation will people be using ?
+what mode of authentication will we be implementing ?
+is there camera recording syncronicity with the access ?
+how do motors and locks get triggered to lock and unlock?
+how do guests get in ?
+how to do customers register?
+are individual devices authorized?
+are we readgin license plates?
+who has access to where?
+how do entered entitiies exit ?
+
+
 
 : Working Glossary Terms -
 
@@ -16,5 +34,3 @@ Initial Brain Storming of relevate terms and phrases:
 	- What do you know?
 	- Where are you going ?
 	- Whad do you need to know ?
-
-	
