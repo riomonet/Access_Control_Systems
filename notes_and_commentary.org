@@ -132,8 +132,19 @@ Is the whole application going to be written in javascript?
 	  wifi -  has unique code
 	  mac address
 
-
 	  https://www.sci.pitt.edu/sites/default/files/PDFs/mobicom22iodetector.pdf
 
 	  https://dl.acm.org/doi/pdf/10.1145/3517238
 	  
+
+
+Problem 1:
+	What authentication schemes should we use for our MVP
+how will they solve our problem
+
+	Develop Problem statement.
+
+- What is the scope of our MVP:
+  what problems will have it have solved?
+
+  Agile approach User Stories -
