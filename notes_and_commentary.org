@@ -8,7 +8,7 @@ Project:  Access Control Systems, design and Implementation
 	logging, system, permission, schedule, motor, maglock,
 	video, camera, license, registration, identification, temporary,
 	car, bicycle, vendor, customer, transient, delivery, mode of transportation.
-	client, valve, device, person, location, service
+	client, valve, device, person, location, service, sharing, modes
 
 
 : Initital questions
@@ -28,8 +28,20 @@ is there a database?
 is it sql?  mongo db or postgres? firebase? graphql?
 what is the front end?			react/react native
 is there an administraor panel?
+
 How do we store credentials?
-do credentials folllow the person or the device?
+
+
+do credentials folllow the person or the device? (main research)
+	 How do we prevent users from sharing their credentials?
+	 no one is going to share there phone, their email address
+	 license plates?
+	 facial recoginition
+	 how to prevent people from sharing access
+	 license plates -
+
+
+
 how do we give temporary credentials?
 how many different access locations are there?
 are we gonna do facial recognition?
@@ -52,8 +64,6 @@ are we going to subcontract authentication?
 are we going to use cloud servers or self host?
 are we gonna use node? express?
 Is the whole application going to be written in javascript?
-
-
 
 : Working Glossary Terms -
 
