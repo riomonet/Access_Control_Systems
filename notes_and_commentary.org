@@ -147,4 +147,15 @@ how will they solve our problem
 - What is the scope of our MVP:
   what problems will have it have solved?
 
-  Agile approach User Stories -
+
+* - Agile approach User Stories -
+
+    As a (who wants to accomplish something)
+    I want to (what they want to accomplish)
+    So that (why they want to accomplish that thing)
+
+An example:
+
+    As a bank customer
+    I want to withdraw money from an ATM
+    So that I’m not constrained by opening hours or lines at the teller’s
