@@ -10,13 +10,31 @@ Project:  Access Control Systems, design and Implementation
 	car, bicycle, vendor, customer, transient, delivery, mode of transportation.
 	client, valve, device, person, location, service, sharing, modes
 
+Glossary:
+
+Authentication: To prove you are who you say you are.
+who can be a system, not only a human being.
+
+Authorization:  what privelges you have, what role are you, what is your category ?
 
 : Initital questions
-who is allowed ?
+who is allowed ?  ROLES? privaleges
+	person, a vehicle. customer, guest,
+		vendor, ups, postal, rubbsih
+
+Is there automatic entry or do users need to push a button?
+
 what mode of transportation will people be using ?
+
 what mode of authentication will we be implementing ?
+
 is there camera recording syncronicity with the access ?
+
+what authenitcation scheme does my system support ?
+    - research authenitcation schemes, explore authentication schemes
+
 how do motors and locks get triggered to lock and unlock?
+
 how do guests get in ?
 how to do customers register?
 are individual devices authorized?
@@ -33,6 +51,8 @@ How do we store credentials?
 
 
 do credentials folllow the person or the device? (main research)
+	 *Active research Area
+	 what are possible sources of unique identification?
 	 How do we prevent users from sharing their credentials?
 	 no one is going to share there phone, their email address
 	 license plates?
@@ -40,13 +60,14 @@ do credentials folllow the person or the device? (main research)
 	 how to prevent people from sharing access
 	 license plates -
 
-
+	 authentication device that is difficut to separate from the individual,
+	or group
 
 how do we give temporary credentials?
 how many different access locations are there?
 are we gonna do facial recognition?
 Is there gonna be app where someon can tap a button?
-Is there gonna be a way for persons to gain temporrary access by
+Is there gonna be a way foor persons to gain temporrary access by
 	registering and paying a fee?
 Are we gonna collect fee's?
 are we going to monitor vehicles within the gates?
@@ -72,3 +93,47 @@ Is the whole application going to be written in javascript?
 	- What do you know?
 	- Where are you going ?
 	- Whad do you need to know ?
+
+
+*  flexiblity of understanding
+	- what is the problem we are trying to solve vs feature implement
+	- exploration 
+	- top down approach vs Bottom up
+	  agile approach - user story?
+	  https://www.agilealliance.org/glossary/user-story-template/
+	  
+	  Design approach --
+		Easily maintable software
+
+	- what is agile approach?
+
+	- technical 
+
+	-  how do we control access permissions to a physical facility ?
+	
+	- Learning about the design from prototyping
+
+	- among the list what is more important problem we are trying to solve
+	  Minimum Viable Product  MVP
+	  structure develeopment based on budget(time)
+
+	  Architecting in a way that project can be evolved
+	  small service?
+
+
+* assumptions
+	people don't share their email addresses. one time code.
+	- time
+
+
+*  unique identifiers - fingerprints
+
+	  bluetooth - unique code
+	  wifi -  has unique code
+	  mac address
+
+
+	  https://www.sci.pitt.edu/sites/default/files/PDFs/mobicom22iodetector.pdf
+
+	  https://dl.acm.org/doi/pdf/10.1145/3517238
+	  
