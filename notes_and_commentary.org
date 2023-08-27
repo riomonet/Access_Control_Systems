@@ -8,12 +8,30 @@ Project:  Access Control Systems, design and Implementation
 	logging, system, permission, schedule, motor, maglock,
 	video, camera, license, registration, identification, temporary,
 	car, bicycle, vendor, customer, transient, delivery, mode of transportation.
-	client, valve, device, person, location, service, sharing, modes
+	client, valve, device, person, location, service, sharing, modes,
+	identification, token,
+
+_more terms_
+
+OTP
+Single Sign-On Authentication (SSO) :
+2nd Factor Authentication (Two-Factor Authentication):
+Adaptive Authentication:
+API Authentication:
+HTTP Basic Authentication:
+API Passwords:
+OAuth:
+
+
+ 
+
+
 
 Glossary:
 
 Authentication: To prove you are who you say you are.
 who can be a system, not only a human being.
+A user is who they claim to be.
 
 Authorization:  what privelges you have, what role are you, what is your category ?
 
@@ -159,3 +177,25 @@ An example:
     As a bank customer
     I want to withdraw money from an ATM
     So that I’m not constrained by opening hours or lines at the teller’s
+
+
+ 
+* what are the 5 authentication schemes
+	- Password based Authentication
+	- Multi Factor Authentication
+	- Certificate Based Authenticatoin
+	  certifacate is a public keys signed by a certificate authority
+	  like a drivers license
+	- Biometric Authentication
+	  - facial recognition
+	  - fingerprint scanners
+	  - voice recognition
+	  - retina scanners
+	- Token based Authentication
+	  users enter credentials once and receive a token.
+
+
+
+
+
+
