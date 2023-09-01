@@ -27,10 +27,6 @@ OAuth:
 continuouse authenitcation
 
 
-
-
-
-
 Glossary:
 
 Authentication: To prove you are who you say you are.
@@ -175,7 +171,7 @@ how will they solve our problem
     As a (who wants to accomplish something)
     I want to (what they want to accomplish)
     So that (why they want to accomplish that thing)
-
+    
 An example:
 
     As a bank customer
@@ -184,7 +180,7 @@ An example:
 
 
  
-* what are the 5 authentication schemes
+* what are the 5 authentication schemes  
 	- Password based Authentication
 	- Multi Factor Authentication
 	- Certificate Based Authenticatoin
@@ -198,9 +194,6 @@ An example:
 	- Token based Authentication
 	  users enter credentials once and receive a token.
 	  Json Web Tokens
-
-
-
 	
 * 3 authentication factors
 	- something you know ( knowledge factor)
@@ -209,8 +202,35 @@ An example:
 	  token/hardware device
 	- something you are (inherence factor)
 	  biometric
-	  
+
+* agile
+
+** Identify stake holders
+1. marina members
+2. owner/manager
+3. guests
+4. vendors
+
+** customer story 1
+as a marina member,
+I want to enter  the marina
+by foot, bycicle or car
+so that I can get to my boat
+
+Use BDD Tool -> Cucumber.io
+                gherkin syntax
+
+example github repo that uses cucumber
+https://github.com/inukshuk/jekyll-scholar
 
 
+RESTFUL - API
+Theortician     /       Practioner
 
+->  rigorous theory for our projects
+
+scaffodling to specifying features in the format
+
+How to be your own project manager.
+agile 
 
