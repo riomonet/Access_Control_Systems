@@ -1,6 +1,17 @@
 Project:  Access Control Systems, design and Implementation
+Meeting ID: 833 5759 9994
+Passcode: 961096
 
-: Initial Brain Storming of relevate terms and phrases:
+[[https://brooklyn-cuny-edu.zoom.us/j/83357599994?pwd=KzgzaGlHd1BGd3dOd0dkUWp2b1ZhQT09][zoom link]]
+
+
+Balance:
+theoritcian | practicioner
+apply rigorous theory for our pracitcal projects
+
+* Initial Brain Storming of relevate terms and phrases:
+
+
 
 	Access, control, vehicle, authorization, authorized, pedestrian,
 	entrance, exit, gate, lock, survailance, guest, visitor,
@@ -27,7 +38,7 @@ OAuth:
 continuouse authenitcation
 
 
-Glossary:
+* Glossary
 
 Authentication: To prove you are who you say you are.
 		who can be a system, not only a human being.
@@ -35,7 +46,7 @@ Authentication: To prove you are who you say you are.
 
 Authorization:  what privelges you have, what role are you, what are you allowed to access ?
 
-: Initital questions
+* Initital questions
 who is allowed ?  ROLES? privaleges
 	person, a vehicle. customer, guest,
 		vendor, ups, postal, rubbsih
@@ -106,11 +117,6 @@ Is the whole application going to be written in javascript?
 
 : Working Glossary Terms -
 
-: The Four Questions - 
-	- Where are you ?
-	- What do you know?
-	- Where are you going ?
-	- Whad do you need to know ?
 
 
 *  flexiblity of understanding
@@ -166,19 +172,6 @@ how will they solve our problem
   what problems will have it have solved?
 
 
-* - Agile approach User Stories -
-
-    As a (who wants to accomplish something)
-    I want to (what they want to accomplish)
-    So that (why they want to accomplish that thing)
-    
-An example:
-
-    As a bank customer
-    I want to withdraw money from an ATM
-    So that I’m not constrained by opening hours or lines at the teller’s
-
-
  
 * what are the 5 authentication schemes  
 	- Password based Authentication
@@ -195,6 +188,7 @@ An example:
 	  users enter credentials once and receive a token.
 	  Json Web Tokens
 	
+
 * 3 authentication factors
 	- something you know ( knowledge factor)
 	  passwords/pins
@@ -203,19 +197,72 @@ An example:
 	- something you are (inherence factor)
 	  biometric
 
-* agile
 
-** Identify stake holders
-1. marina members
-2. owner/manager
-3. guests
-4. vendors
 
-** customer story 1
-as a marina member,
-I want to enter  the marina
-by foot, bycicle or car
-so that I can get to my boat
+* Agile approach User Stories/Acceptance Criteria
+
+** terms:
+example mapping -> stories
+business requirments ,acceptance criteria, rules    think of synonyms
+
+** ideas:
+
+don't over engineer just the smallest possible feature
+one feature at a time (one user story)
+
+
+tests, integration unit end to end
+clean code
+documentation
+commenteed
+
+come up with a single user story
+acceptance criteria
+and implement with minimal code
+(along with testing)
+
+Parts:
+   1. stories
+   2. acceptance Criteria
+
+    As a			(who wants to accomplish something)
+    I want to			(what they want to accomplish)
+    So that			(why they want to accomplish that thing)
+
+** checklist
+ - [ ] Keep them short
+ - [ ] keep them simple
+ - [ ] write from the perspective of the user
+ - [ ] make the value/benefit of the story clear
+ - [ ] describe one piece of functionality
+ - [ ] Use acceptance criteria to show MVP
+
+** examples
+
+*** As a bank customer
+I want to withdraw money from an ATM
+So that I’m not constrained by opening hours or lines at the teller’s
+
+*** As an administrator
+I want to be able to create other administrators for certain projects
+So that I can delegate tasks more efficiently
+
+** Acceptance Criteria  (Conditions of Satisfaction)
+
+*** examples
+
+**** As a potential conference attendee, I want to be able to register for the conference online, so that registration is simple and paperless.
+
+Acceptance Criteria:
+    Conference Attendance Form
+    A user cannot submit a form without filling out all of the mandatory fields (First Name, Last Name, Company Name, Email Address, Position Title, Billing Information)
+    Information from the form is stored in the registrations database
+    Protection against spam is working
+    Payment can be made via Paypal, Debit or Credit Cards
+    An acknowledgement email is sent to the attendee after submitting the form
+
+** BDD Gherkin
+
 
 Use BDD Tool -> Cucumber.io
                 gherkin syntax
@@ -224,13 +271,52 @@ example github repo that uses cucumber
 https://github.com/inukshuk/jekyll-scholar
 
 
-RESTFUL - API
-Theortician     /       Practioner
-
-->  rigorous theory for our projects
 
 scaffodling to specifying features in the format
 
 How to be your own project manager.
 agile 
+
+
+
+* M59 access control
+
+Vehicle gate
+pedestrian gate
+dock access
+bathroom access
+
+** Identify Users
+	 1. Marina member
+     2. Employees
+	 3. owner
+	 4. manager
+	 5. guests
+	 6. vendors (ups, daniels, rent a throne)
+
+** User Stories
+
+*** Slip holders
+
+**** as a marina member, 
+When I drive up to the gate, I want the vehicle gate to open
+so I can drive into the marina
+
+**** as a marina member
+I want the marina gates to be closed
+So Me and My stuff are safe.
+
+**** as marina member
+When I drive up to the gate, I want the vehicle gate to open
+so I can drive out of the Marina.
+
+**** as a marina member
+I want to easily register my vehicle
+so i can get in and out of the Marina.
+
+**** as a marina member
+I want the vehicle gate to open for my guests
+so my friends and family can visit me at the marina
+
+
 
