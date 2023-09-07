@@ -4,7 +4,6 @@ Passcode: 961096
 
 [[https://brooklyn-cuny-edu.zoom.us/j/83357599994?pwd=KzgzaGlHd1BGd3dOd0dkUWp2b1ZhQT09][zoom link]]
 
-
 Balance:
 theoritcian | practicioner
 apply rigorous theory for our pracitcal projects
@@ -45,6 +44,7 @@ Authentication: To prove you are who you say you are.
 		A user is who they claim to be.
 
 Authorization:  what privelges you have, what role are you, what are you allowed to access ?
+
 
 * Initital questions
 who is allowed ?  ROLES? privaleges
@@ -119,7 +119,7 @@ Is the whole application going to be written in javascript?
 
 
 
-*  flexiblity of understanding
+* flexiblity of understanding
 	- what is the problem we are trying to solve vs feature implement
 	- exploration 
 	- top down approach vs Bottom up
@@ -253,9 +253,19 @@ and implement with minimal code
 (along with testing)
 
 ** Story blueprint
+[[https://www.spritecloud.com/guides/cucumber-gherkin?utm_source=youtube&utm_medium=gherkin_video_description&utm_campaign=cucumbergherkin_guide][cucumber gherkin guide from spriteCloud]]
+
+*** basic story outline
     As a			(who wants to accomplish something)
     I want to			(what they want to accomplish)
     So that			(why they want to accomplish that thing)
+
+*** more specific
+TITLE
+    as a:  Person or role who will benefit from this feature
+    I want:  the feature
+    so That: the benefit or value of the feature
+    
 
 *** 3 c's
 Card - 
@@ -265,7 +275,7 @@ Card -
 Conversation
 Confirmation
 
-    
+
 
 ** Story checklist
  - [ ] Keep them short
@@ -277,15 +287,16 @@ Confirmation
 
 ** examples
 
-*** As a bank customer
-I want to withdraw money from an ATM
-So that I’m not constrained by opening hours or lines at the teller’s
 
-*** As an administrator
 I want to be able to create other administrators for certain projects
 So that I can delegate tasks more efficiently
 
 ** Acceptance Criteria  (Conditions of Satisfaction)
+A description of each specific scenario of the narrative with the following structure
+
+GIVEN:  The initial context at the beginning of the scenario, in one or more clauses
+WHEN: the event that triggers the scenario
+THEN: the expected outcome in one or more clauses
 
 *** examples
 
@@ -299,6 +310,23 @@ Acceptance Criteria:
     Payment can be made via Paypal, Debit or Credit Cards
     An acknowledgement email is sent to the attendee after submitting the form
 
+**** Title: Returns and exchanges go to inventory. As a store manager, I want to add items back to inventory when they are returned or exchanged, So that I can track inventory levels.
+
+@scenario1
+
+Scenario: Items returned for refund should be added to inventory. Given that a customer previously bought blue suede shoes from me And I have three blue suede shoes in inventory, When they return the blue suede shoes for a refund, Then I should have four blue suede shoes in inventory.
+
+@scenario2
+
+Scenario: Exchanged items should be returned to inventory. Given that a customer previously bought red baseball cap from me And I have two red baseball caps in inventory And three black baseball caps in inventory, When they exchange red baseball cap for a black baseball cap, Then I should have three red baseball caps in inventory And two black baseball caps in inventory.
+
+Now that we’ve explained Behaviour Driven Development and given a brief primer on how to write the user stories that are so central to BBD, let’s look at Gherkin.
+
+**** As a bank customer
+I want to withdraw money from an ATM
+So that I’m not constrained by opening hours or lines at the teller’s
+**** As an administrator
+
 ** BDD Gherkin
 Use BDD Tool -> Cucumber.io
                 gherkin syntax
@@ -309,6 +337,7 @@ https://github.com/inukshuk/jekyll-scholar
 
 *** backtracking design
 [[https://www.youtube.com/watch?v=i0Q5orC5jSQ][Great description of how to write a gherkin]]
+
 
 * M59 access control
 
