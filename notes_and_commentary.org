@@ -199,13 +199,44 @@ how will they solve our problem
 
 
 
-* Agile approach User Stories/Acceptance Criteria
 
-** terms:
-example mapping -> stories
-business requirments ,acceptance criteria, rules    think of synonyms
+* Agile approach User Stories/Acceptance Criteria // example mapping => acceptance criteria
 
-** ideas:
+backlog of features/stories
+pick one and do Example mapping
+implement the feature
+
+purpose is to discover the detail from a general user story
+  
+** BUSINESS REQUIRMENTS, ACCEPTANCE CRITERIA ACCEPTANCE TESTS, RULES (these are synonyms)
+
+1. yellow card on top => is the user story/ stories must be small enough to sprint. 
+
+2. each acceptance criteria/rule is writtine on a blue card and placed beneath the yellow card
+   are you suppose to only focus on a single rule?
+
+3. examples to illustrate these rules are written on green cards and placed under relevant rules
+   Examples -> questions
+
+   Examples are written in the following format
+
+   1. Context - which is the initial state
+   2. Action - the event that spurs some response from the system
+   3. Expected Outcome
+
+   Examples are what get implemented in cucumber           
+           
+4. questions that cant be answered are captured on red cards
+
+5. this is done in a timed session until the scope of the story  is fleshed out and clear.
+ 
+6. take  a picture of your map
+
+7. may take 3 sessions to have a fully developed/understood story
+
+8. SPRINT!
+
+** notes for
 
 don't over engineer just the smallest possible feature
 one feature at a time (one user story)
@@ -217,19 +248,26 @@ documentation
 commenteed
 
 come up with a single user story
-acceptance criteria
+develop acceptance criteria
 and implement with minimal code
 (along with testing)
 
-Parts:
-   1. stories
-   2. acceptance Criteria
-
+** Story blueprint
     As a			(who wants to accomplish something)
     I want to			(what they want to accomplish)
     So that			(why they want to accomplish that thing)
 
-** checklist
+*** 3 c's
+Card - 
+        STORIES ARE equivalent REQUIREMENTS.
+        can just have title to start doesn't need full understanding to start
+
+Conversation
+Confirmation
+
+    
+
+** Story checklist
  - [ ] Keep them short
  - [ ] keep them simple
  - [ ] write from the perspective of the user
@@ -278,7 +316,7 @@ How to be your own project manager.
 agile 
 
 
-
+p
 * M59 access control
 
 Vehicle gate
