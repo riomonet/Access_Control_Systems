@@ -300,8 +300,6 @@ Acceptance Criteria:
     An acknowledgement email is sent to the attendee after submitting the form
 
 ** BDD Gherkin
-
-
 Use BDD Tool -> Cucumber.io
                 gherkin syntax
 
@@ -309,14 +307,9 @@ example github repo that uses cucumber
 https://github.com/inukshuk/jekyll-scholar
 
 
+*** backtracking design
+[[https://www.youtube.com/watch?v=i0Q5orC5jSQ][Great description of how to write a gherkin]]
 
-scaffodling to specifying features in the format
-
-How to be your own project manager.
-agile 
-
-
-p
 * M59 access control
 
 Vehicle gate
