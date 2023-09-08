@@ -261,6 +261,7 @@ and implement with minimal code
     So that			(why they want to accomplish that thing)
 
 *** more specific
+
 TITLE
     as a:  Person or role who will benefit from this feature
     I want:  the feature
@@ -340,6 +341,10 @@ https://github.com/inukshuk/jekyll-scholar
 
 
 * M59 access control
+
+wrtie enough of user stories
+to develop an idea of  MVP
+to finsih within 10 weeks.
 
 Vehicle gate
 pedestrian gate
