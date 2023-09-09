@@ -361,27 +361,47 @@ bathroom access
 
 ** User Stories
 
-*** Slip holders
+*** notes
+**** <2023-09-08 Fri> develop rigorous group of scenario's
+concrete examples -> scenarios
+happy and sad scenarios
+**** <2023-09-08 Fri>  realization about cameras and lic plates
+I realize I have to find some sort of api that will have built in lic plate recognition for the cameras.
 
-**** as a marina member, 
-When I drive up to the gate, I want the vehicle gate to open
+*** Marina Member stories
+**** as a marina member, When I drive up to the gate,I want the vehicle gate to open
 so I can drive into the marina
 
-**** as a marina member
-I want the marina gates to be closed
+***** lic plate happy scenario ->
+given vehicle approach to the gate => precondition
+when the camera detects the license plate  => check the condition
+when the lic plate found in data base
+then acctuator opens the gate
+
+***** lic plate unhappy scenario ->
+camera cant detect lic plate
+use scenarios to exhaustively
+anticapte all possible error
+scenarios. any where things can go wrong.
+
+
+**** as a marina member I want to easily register my vehicle
+So I have vehicle access to the marina
+
+**** as a marina member I want the marina gates to be closed
 So Me and My stuff are safe.
 
-**** as marina member
-When I drive up to the gate, I want the vehicle gate to open
+**** as marina member When I drive up to the gate, I want the vehicle gate to open
 so I can drive out of the Marina.
 
-**** as a marina member
-I want to easily register my vehicle
-so i can get in and out of the Marina.
-
-**** as a marina member
-I want the vehicle gate to open for my guests
+**** as a marina member I want the vehicle gate to open for my guests
 so my friends and family can visit me at the marina
+
+
+
+
+
+
 
 
 
