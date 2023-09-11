@@ -259,7 +259,7 @@ and implement with minimal code
     As a			(who wants to accomplish something)
     I want to			(what they want to accomplish)
     So that			(why they want to accomplish that thing)
-
+    
 *** more specific
 
 TITLE
@@ -340,16 +340,12 @@ https://github.com/inukshuk/jekyll-scholar
 [[https://www.youtube.com/watch?v=i0Q5orC5jSQ][Great description of how to write a gherkin]]
 
 
+
 * M59 access control
 
-wrtie enough of user stories
+write enough of user stories
 to develop an idea of  MVP
 to finsih within 10 weeks.
-
-Vehicle gate
-pedestrian gate
-dock access
-bathroom access
 
 ** Identify Users
 	 1. Marina member
@@ -365,7 +361,7 @@ bathroom access
 **** <2023-09-08 Fri> develop rigorous group of scenario's
 concrete examples -> scenarios
 happy and sad scenarios
-**** <2023-09-08 Fri>  realization about cameras and lic plates
+**** <2023-09-08 Fri>  realization about cameras and lic plate
 I realize I have to find some sort of api that will have built in lic plate recognition for the cameras.
 
 *** Marina Member stories
@@ -396,6 +392,110 @@ so I can drive out of the Marina.
 
 **** as a marina member I want the vehicle gate to open for my guests
 so my friends and family can visit me at the marina
+
+
+
+
+
+
+
+
+
+
+
+
+
+** Feature pages (behaviors)
+
+feature:
+        as a marina member,
+        When I drive up to the gate,
+        I want the vehicle gate to open
+
+        A. scenario: vehicle approaches gate
+                given:  no vehicle infront of gate
+                when:   a vehicle drives towards the gate
+                when:   the lic plate comes into focus 
+                then:   a "lic_plate_snapshot" of the license plate is taken
+
+                A 1. scenario: no snapshot triggerd (ERROR CONDITION)
+                        given:  no vehicle infront of gate
+                        when:   a vehicle drives towards the gate
+                        when:   no snapshot is triggered(error here)
+                        then:   ?????????????????????
+                
+        B. scenario: snapshot has been taken
+                given:  a vehicle is infront of the gate
+                when:   a "lic_plate_snapshot" is taken
+                then:   it is stored in the database with timesstamp as a name,
+                and:    deocode image module is called to decode image from lic-plate into plain text.
+
+
+        C. scenario: computer vision decoding
+                given: decode image module has been called
+                when:  the image is decoded into a plain text lic plate number.
+                then:  the plain text lic plate number, the snapshot, and a timestamp
+                       are stored in the database as a record of attempted entry
+                and: the search database for authorization routine is called
+
+                C1. scenario: unable to decode image(ERROR)
+                        given: decode image module has been called
+                        when:  the image is unable to be decoded.
+                        then:  take another snapshot
+                        and go back to B.
+
+        D. scenario: database  finds plate number authorized
+                given: the snapshot has been converted into plain text lic plate number
+                when:  the search database for authorization routine is called 
+                then:  the database is searched for the plain text lic plate number
+                and if authorized calls open gate routine
+
+                D1. scenario database does NOT find plate in authorized list
+                        given: the snapshot has been converted into plain text lic plate number
+                        when:  the search database for authorization routine is called
+                        when and the plate is not found in the authorized list.
+                        then:  ????????????????????????????
+
+        E. scenario: vehicle authorized
+                given: vehicle is authorized
+                when: open gate routine called
+                then: the vehicle gate relay is sent a signal to open gate
+                and check_gate_opening routine is called.
+
+        D. scneraio: gate opens
+                given: gate is opening
+                when: the check gate opening routins is called
+                then: the routine uses computer vision to determine if the gate is/has
+                opening/opened
+
+        E  scenario: gate doesn't open
+                given: relay was activated
+                when: the gate doesn't open
+                then: ??????????????????? 
+                
+                
+*** feature notes:
+  - what does the camera do when a second car drives up during various phases of procedure?
+          every vehicle in and out of the gate should have lic plate and image of passenger taken and stored.
+
+** Ideas on how to write bdd scenarios
+start off writng down what you want to the
+thing you want to see working.
+then you write down what happens before.
+every action should have a check of what makes it succesful
+
+
+given an initial state
+when an action happens
+then verify outcomesx
+
+
+
+
+
+
+
+
 
 
 
