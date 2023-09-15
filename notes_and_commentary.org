@@ -404,10 +404,35 @@ so my friends and family can visit me at the marina
 
 
 
+** Ideas on how to write bdd scenarios
+start off writng down what you want to the
+thing you want to see working.
+then you write down what happens before.
+every action should have a check of what makes it succesful
+
+
+given an initial state
+when an action happens
+then verify outcomesx
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ** Feature pages (behaviors)
-
-feature:
+*** feature - as a marina member when I drive up to the gate
         as a marina member,
         When I drive up to the gate,
         I want the vehicle gate to open
@@ -472,36 +497,149 @@ feature:
                 given: relay was activated
                 when: the gate doesn't open
                 then: ??????????????????? 
-                
-                
+*** notes from profeessor
+
+These are excellent. At present, this organization is good. The user
+stories and scenarios are hierarchical.  If a user story has too many
+scenarios, it can be a sign that the user story is too big because we
+wouldn't be able to complete it in an agile iteration, typically
+defined as a period of 2 weeks.
+
+If we think about how the system behaves,  after examining the
+scenarios, perhaps, we can consider the following user stories (not
+completely written):
+
+1. I want to detect whether a vehicle is approaching the gate
+
+2. I want to detect and decode a license plate of a vehicle at the gate
+
+3. I want to store/log the data about the vehicle at the gate
+
+4. I want to check if the license plate belonging to a "customer".
+
+5. I want to open the gate upon command
+
+6. I want to determine that no vehicle blocking the way of the gate
+
+7. I want to close the gate upon command or after a timeout
+
+8. I want to let the authenticated vehicle in.  (8 is a higher level
+user story, that we do it after complete the other necessary user
+stories, and there are more higher level user stories, perhaps).
+
+
+I sketched them based on what you wrote. I was afraid that we may not be able to complete that big user story in two weeks, so we
+want to break down them into smaller pieces. In this semester, we finish the few that can define our MVP (minimal viable product) 
+-- our MVP might not be a fully functional authentication system although our second MVP might be; and the 1st MVP can just
+display/speak a nice greeting message when a customer drives through the gate where we log its entry time  (if possible their
+license plat number).
+
+
+At present, it might help if we consider the following MVPs in secession:
+
+- The system greets the customer who drives through the gate
+
+- The system logs the customer's license plate and entry time and their authentication status (always true, at present; perhaps,
+some guests, which shows false)
+
+- The system that we remotely open/close gate via a Web app/Mobile app (make sure we can actuate the gate)
+
+- The fully functional system that assemble the above 3 MVPs.
+
+componenent based design
+*** How do you select which tech to use ?
+
+camera ?
+software ?
+*** greeter mvp as first milestone
+
+
+
+Behavior driven development
+behavior of the developer
+behavios of the system
+behavior of the user
+
+
+as a customer
+I want the system to detect my vechile is approaching
+so my license plate can get recognized and my vehicle authorized
+
+as an owner
+I want vehicles approaching the gate to be detected
+
+we are just trying to figure out what we want to build.
+
+	assess who and why are we doing this.
+	conveys how the system behaves
+	and how we communicate
+
+stories -> engineering
+
+
+Human nature and MVP.
+
+greeter
+
+logger
+access control
+
+nonfuntional requirements
+functional requirements
+
+issue and task in github, milestones.
+github project management
+cat tag issues as task
+project manaagement on github
+wiki ?
+
+small goal, small system
+
+
+hobby project/enterprise  project.
+
+well supported.
+
+
+MENTAL MODEL.
+IN SOFTWARE MANUFACTURING UNTIL USER ARE USING IT.
+	REAL PRODUCT NOT UNTIL THE SOFTWARE.
+	
+BDD is very important
+research.
+training.
+How to teach people to do BDD developement.
+method for training people to BDD.
+
+build options tech stack.
+stories,
+scenarios,
+project management
+
+	A - adopt a project
+
+	1. develop requirements/features
+
+	   user stories
+	   scenarios      iterative 
+	   mvp
+
+	2. design and implementation testing phase agile
+
+	   one scenario at a a time
+	   can lead to best tech stack
+
+	   given precondition
+	   when  input/action
+	   then	 testable output
+	
+	tdd
+	   works on first scenarios
+	   follow tdd write gherkin/cucumbers
+	   
+
+	
 *** feature notes:
   - what does the camera do when a second car drives up during various phases of procedure?
           every vehicle in and out of the gate should have lic plate and image of passenger taken and stored.
-
-** Ideas on how to write bdd scenarios
-start off writng down what you want to the
-thing you want to see working.
-then you write down what happens before.
-every action should have a check of what makes it succesful
-
-
-given an initial state
-when an action happens
-then verify outcomesx
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
