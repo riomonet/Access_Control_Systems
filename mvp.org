@@ -1,0 +1,67 @@
+Agile New Understanding
+       Main principal across all phaeses
+       DELIVER HIGHEST VALUE!!
+       IN SHORTEST TIME POSSIBLE!
+        get feedback and add more value(through featuers to
+        the product backlog)
+
+* Reflections:
+hyp: If the feature seems too complicated to deliver in
+a short time. Then it likely doesn't have highest value
+at this time.
+
+hyp: Before items are added to the backlog there should be
+a fleshing out process to understand the problem better.
+Can call feature Ideation.
+        
+* MVP
+The highest value product we can deliver to stake holders in the minimum amount of time.
+
+* User Stories / Feature (MVP Backlog)
+the set of features we need to develop to get to MVP
+
+* Scenarios/ behavorial tests
+describe the behvior
+context - the starting state
+event - the thing the user does
+outcome - the behavior the customer can expect
+from the system, the test describe the the set
+of results the customer can expect from the system.
+
+* The sprint
+2 week development cycle
+decide what features from the product backlog  you can implement within in two weeks and add them to sprint
+backlog. 
+ 
+* The kanban
+ A chart for montioring features from product
+ backlog to released.
+
+ 
+* MVP1
+The most value we can deliver to customers and ownership
+is to give them the facility to activate the vehicle or
+pedestrain gates using their phones.
+
+** backlog
+
+** features
+- login to a web site
+
+- user page has two buttons
+  open vehicle gate
+  open pedestrian gate
+
+- open gates
+
+** This weeks sprint
+
+
+
+
+
+
+
+
+
+ 
