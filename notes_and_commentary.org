@@ -509,7 +509,106 @@ If we think about how the system behaves,  after examining the
 scenarios, perhaps, we can consider the following user stories (not
 completely written):
 
+
+   
+as a  marina manager
+I want to detect whether a vheicle is approaching the gate
+so I can respond appropriately to what is happening outside of the marina gates
+
+https://www.youtube.com/watch?v=VS6EEUVZGLE
+short description of behaviorial test
+
+https://www.youtube.com/watch?v=VS6EEUVZGLE
+short description of agile
+
+- agile development cycle
+        owner has an idea
+                develop prioritised list features and user stories(this is the product backlog)
+
+          team selects what features it think it can implement from the product backlog this is called the sprint backlog within a 2 week timeframe
+          this a sprint.
+        after do a sprint review
+        nto understand how to make the next sprint more efficient
+        present to owner and customer.
+        continuously get customer feedback after feature is released
+        feedback to go back into feature list/user stories for future sprints.
+
+context: given
+event: when
+outcome: then
+
+CONSIDERING CHANGING direction..
+
+maybe more attainable and offer more value
+to the customer and me.
+
+New Direction
+
+As a customer,
+I would like to be able to open the gate with my phone
+so I don't have to buy a clicker if I lose one.
+
+As an owner,
+I would like customers to use their phones ot open the gate
+so I dont have to keep on buying clickers.
+
+
 1. I want to detect whether a vehicle is approaching the gate
+
+A. scenario: a customer/visitor approaching
+   given: the driveway is clear
+   when:  a vehicle drives towards the gate
+   then:  a dvr should start recording video
+
+
+   A1. scenario motion not detected
+     given: vehicle approaching the gate
+     when: dvr fails to start recording
+     then: an alert should be sent to management.
+
+
+   A2. scenario: bicycle, pedestrion
+      given: driveway clear
+      when: a pedestrian or bicycle approaches the gate
+      then: a dvr should start recording video.
+      
+A3. scenario: vehilce stopped in front fo gate
+     given: vechile is approaching the gate
+     when: the vehicle crosses the wire, 
+     then: log entry with time stamp that vehicle is on outside wire
+
+B. scenario: non marina traffic
+   given: a vehicle driving towards the gate
+   when: the car turns away and is out of frame
+   then: the dvr should stop recording
+
+
+C. scenario: gates open vehicle drives in 
+   given: gates are open and vehcile drives in
+   when:  the car is out of frames
+   then: the dvr should stop recording.
+
+D. scenario: two or more cars in driveway waiting to get in.
+
+
+
+E. scenario: power goes out
+   given: the driveway is clear
+   when: the power goes out
+   then: battery back up should be activated
+   and alert should be sent to management and staff
+
+F. scenario Battery back up activated
+   given: gate and dvr are powered by battery back up.
+   when: battery has 5 minutes left of power
+   then: gate should open and stay open
+   and alert should be sent to management,staff and customers
+
+G. scenario
+   
+F. scenario: snowing or raining
+
+G. scenario: 
 
 2. I want to detect and decode a license plate of a vehicle at the gate
 
@@ -643,3 +742,20 @@ project management
   - what does the camera do when a second car drives up during various phases of procedure?
           every vehicle in and out of the gate should have lic plate and image of passenger taken and stored.
 
+https://en.wikipedia.org/wiki/Payment_Card_Industry_Data_Security_Standard
+
+https://en.wikipedia.org/wiki/Adapter_pattern
+
+https://www.digitalocean.com/community/tutorials/gangs-of-four-gof-design-patterns
+
+https://itsadeliverything.com/revisiting-the-iterative-incremental-mona-lisa
+
+low fidelity iterations to high fidelity
+sketch to fully implementd painting
+
+
+database interface layer not
+embedded into the flask app.
+
+https://www.humanizingwork.com/the-humanizing-work-guide-to-splitting-user-stories/
+methodology

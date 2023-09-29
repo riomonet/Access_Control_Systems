@@ -1,6 +1,6 @@
 Agile New Understanding
        Main principal across all phaeses
-       DELIVER HIGHEST VALUE!!
+       DELIVER HIGHEST VALUE IN !!
        IN SHORTEST TIME POSSIBLE!
         get feedback and add more value(through featuers to
         the product backlog)
@@ -13,6 +13,9 @@ at this time.
 hyp: Before items are added to the backlog there should be
 a fleshing out process to understand the problem better.
 Can call feature Ideation.
+
+hyp: if you feel that little tingle of complexity hitting
+feature is not thought through enough to add to the back log
         
 * MVP
 The highest value product we can deliver to stake holders in the minimum amount of time.
@@ -28,7 +31,7 @@ outcome - the behavior the customer can expect
 from the system, the test describe the the set
 of results the customer can expect from the system.
 
-* The sprint
+* The sprint - an agile iteration
 2 week development cycle
 decide what features from the product backlog  you can implement within in two weeks and add them to sprint
 backlog. 
@@ -39,23 +42,30 @@ backlog.
 
  
 * MVP1
-The most value we can deliver to customers and ownership
+The most value we can deliver to customers and ownership at this time
 is to give them the facility to activate the vehicle or
 pedestrain gates using their phones.
 
 ** backlog
 
 ** features
-- login to a web site
 
+*** sprint 1 (Flask or Node) 
+- login to a mobile optimized web site
 - user page has two buttons
   open vehicle gate
   open pedestrian gate
 
-- open gates
+*** sprint 2 communicate with relay
+ open gates
+
+*** sprint 3 deploy
+- application deployement
 
 ** This weeks sprint
+https://e.saasbook.info/chapter/7/section/1
 
+https://www.sysnetgrp.net/
 
 
 
