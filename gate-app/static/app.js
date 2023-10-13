@@ -2,9 +2,14 @@
 v = document.querySelector("#vehicle")
 p = document.querySelector("#pedestrian")
 
+v.addEventListener('click', () => {
+   fetch('/open_gate')
+	.then(response => response.json())
+	.then(data => console.log(data))
+	.catch((error) => console.error('Error:', error))
+});
 
-
-v.addEventListener('click', () => console.log("vehicle clicked") )
-p.addEventListener('click', () => console.log("pedestrian clicked") )
+    
+// p.addEventListener('click', () => console.log("pedestrian clicked") )
 
 // add function call to activate gate
