@@ -1,7 +1,13 @@
-from flask import Flask, request, render_template, redirect
-app = Flask(__name__)
+from flask import Flask, request, render_template, redirect, session
+from flask_bcrypt import Bcrypt
 from modules.authorize import authenticate
 from modules.open_gate import open
+
+app = Flask(__name__)
+app.secret_key = b'_5#y2L"F4Q8z\n\xec]/'
+
+bcrypt = Bcrypt(app)
+
 
 @app.route('/', methods=['GET','POST'])
 def login():
@@ -12,12 +18,10 @@ def login():
             return redirect('/')
     else:
         return render_template('login.html')
-
     
 @app.route('/access')
 def access():
     return render_template('access.html')
-
 
 @app.route('/open_gate')
 def open_gate():
@@ -28,7 +32,6 @@ def open_gate():
         result = 'fail'
 
     return {'result': result};
-
 
 # what are the pssible states the user can be in.
 '''

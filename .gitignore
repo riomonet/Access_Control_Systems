@@ -1,2 +1,9 @@
 /cuc_test/node_modules/
 /gate-app/venv/
+/gate-app/__pycache__/
+/gate-app/instance/
+/gate-app/.pytest_cache/
+/gate-app/htmlcov/
+/gate-app/dist/
+/gate-app/build/
+/gate-app/*.egg-info/

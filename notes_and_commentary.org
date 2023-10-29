@@ -759,3 +759,7 @@ embedded into the flask app.
 
 https://www.humanizingwork.com/the-humanizing-work-guide-to-splitting-user-stories/
 methodology
+
+
+postgresql
+https://www.postgresql.org/docs/current/libpq-pgpass.html
