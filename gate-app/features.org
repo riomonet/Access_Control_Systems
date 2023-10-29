@@ -1,0 +1,14 @@
+* Administration dashboard
+** Administrator can add users, and make users active and inactive
+** view reports by customer and by time frame of access requests
+
+* update database on access request
+** on a per user basis if they click the button an entry for that user should be added to the database.
+
+* styling
+** login page should look more like twitter
+
+* access control routes
+** buttons on access control should hit flask routes and flask routes should
+make the requests to the device to open and close the gate
+** 
