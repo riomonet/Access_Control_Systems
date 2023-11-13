@@ -8,6 +8,13 @@ v.addEventListener('click', () => {
 	.catch((error) => console.error('Error:', error))
 });
 
+p.addEventListener('click', () => {
+   fetch('/open_pedestrian_gate')
+	.then(response => response.json())
+	.then(data => console.log(data))
+	.catch((error) => console.error('Error:', error))
+});
+
     
 // p.addEventListener('click', () => console.log("pedestrian clicked") )
 

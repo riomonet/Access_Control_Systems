@@ -5,7 +5,7 @@ from werkzeug.exceptions import abort
 
 from flaskr.auth import login_required
 from flaskr.db import get_db
-from flaskr.modules.open_gate import open
+from flaskr.open_gate import open,open_pedestrian
 
 bp = Blueprint('access', __name__)
 
@@ -17,8 +17,10 @@ def access():
 @bp.route('/open_gate')
 def open_gate():
     res = open()
-    if res == 1:
-        result = 'succses'
-    else:
-        result = 'fail'
-    return {'result': result};
+    return res
+
+@bp.route('/open_pedestrian_gate')
+def open_pedestrian_gate():
+    res = open_pedestrian()
+    return res
+

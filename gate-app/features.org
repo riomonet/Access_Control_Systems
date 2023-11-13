@@ -11,4 +11,5 @@
 * access control routes
 ** buttons on access control should hit flask routes and flask routes should
 make the requests to the device to open and close the gate
-** 
+** deeping understanding of the authentiaction used compare to Bcrypt, oath2
+
