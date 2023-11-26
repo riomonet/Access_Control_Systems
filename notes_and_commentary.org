@@ -4,6 +4,43 @@ Passcode: 961096
 
 [[https://brooklyn-cuny-edu.zoom.us/j/83357599994?pwd=KzgzaGlHd1BGd3dOd0dkUWp2b1ZhQT09][zoom link]]
 
+https://queue.acm.org/
+
+-- Formal verification
+
+the mythical man month
+frederick brooks jr.
+
+persitance storage on cell phone?
+
+binds a long term session with a short term session
+binds a device to a user.
+
+
+2 factor authentication
+binding a device and user.
+
+alternative solutions sms.
+you have to pay
+operation costs
+realtime 2 factor authentication
+
+replacing radio transmitter with web app
+long term token
+device authentication  elevator talk
+
+
+
+https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959
+
+https://amturing.acm.org/award_winners/emerson_1671460.cfm
+
+https://link.springer.com/book/10.1007/978-1-4471-6639-9
+
+https://web.dev/articles/appcache-beginner
+
+https://openreview.net/forum?id=shpkpVXzo3h
+
 Balance:
 theoritcian | practicioner
 apply rigorous theory for our pracitcal projects

@@ -1,0 +1,68 @@
+Device Authentication.
+
+Client Side Storage Options
+		- Web Storage API
+		- IndexedDB API
+		- Cache API
+
+1. WEB STORAGE API
+
+		- a. Easy to use
+		- b .Offers Short or Long Term local storage.
+		- c. key-value pairs in UTF-16 string format
+				 (all data is strings)
+		- d. session object is tab specific.
+		- e. session object is page-protocol specific.
+
+There two main Web Storage API objects meant for short or long ter Client side storage.
+
+A. window.sessionStorage: Cleared when page session ends(tab closed)
+
+		Set storage
+		sessionStorage.setItem("key", "value");
+
+		Get saved data from sessionStorage
+		let data = sessionStorage.getItem("key");
+
+		Remove saved data from sessionStorage
+		sessionStorage.removeItem("key");
+
+		Remove all saved data from sessionStorage
+		sessionStorage.clear();
+
+
+B. window.localStorage: Persists across reloads and restarts.
+
+		Set Storage
+		localStorage.setItem("key","value")
+
+		get storage
+		value = localStorage.getItem("key")
+
+
+*2*. INDEXED_DB API
+		Complete client side object store database.
+		Can store complex data types,
+		Images, videos or any complex type.
+		can create a database and tables right on the client side.
+		each table can store rows of complex objects
+
+		This is meant to store assets locally and not require the browser to download the same assets everytime in visits sight.
+		Main HTML, CSS, JS files still need to be downloaded.
+
+
+*3*. THE CACHE API
+	 Load content offline,
+	 background sync.
+
+	 Service workers are JS files that run on separate threads that are not connected to the DOM. They are background processes. They listen for events such as fetch requests and push meassages and react to them.
+	 Service Workers need to be registered with the browser. Browser essentially installs the service worker. and the service worker can then listen for events and do things.
+
+
+	 Usually in Combo with the service worker API
+	 This API is meant to build web apps that can be consumed on the
+	 client side without an internet connection.
+
+	 Registerd Service workers intercept network traffic cache responses and handle requests locally.
+
+	 Progressive Web Apps (PWAs) are browser-based applications that have become an alternative to native mobile apps.

@@ -15,11 +15,13 @@ def access():
     return render_template('access.html')
 
 @bp.route('/open_gate')
+@login_required
 def open_gate():
     res = open()
     return res
 
 @bp.route('/open_pedestrian_gate')
+@login_required
 def open_pedestrian_gate():
     res = open_pedestrian()
     return res

@@ -1,3 +1,4 @@
+
 v = document.querySelector("#vehicle")
 p = document.querySelector("#pedestrian")
 
