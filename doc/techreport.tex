@@ -1,0 +1,71 @@
+\documentclass[sigconf]{acmart}
+\usepackage{paralist}
+
+\acmConference[Conference]{Conference Name}{Date}{Location}
+\acmYear{Year}
+
+\begin{document}
+
+\title{A Convenient and Secure Access Control of Physical Facilities using Smartphones}
+\subtitle{Subtitle, if any}
+
+\author{Author 1}
+\affiliation{%
+  \institution{CUNY Brooklyn College}
+  \country{USA}
+}
+\email{author1@example.com}
+
+\author{Author 2}
+\affiliation{%
+  \institution{CUNY Brooklyn College}
+  \country{USA}
+}
+\email{author2@example.com}
+
+\begin{abstract}
+Your abstract goes here.
+\end{abstract}
+
+\keywords{Keyword1, Keyword2, Keyword3}
+
+\maketitle
+
+\section{Introduction}
+Numerous facilities have controlled gate access. A common implementation is to
+assign a user a physical token. Given the ubiquity of smartphones, we explore
+the possibility of using a smartphone as a token. For instance, users
+authenticates themselves via an application on their phones by entering a
+password. We are concerned with two design requirements:
+\begin{inparaenum}[1)] \item the system should be as conveniently to use as the
+physical token;
+    \item the authentication secrete, such as a password should not easily allow
+shared access, just like the physical tokens. \end{inparaenum}
+
+There are several proposals that allude to a possible solution to this problem,
+particularly to satisfy the second requirement. These proposals including RFC
+7800 are centered around the concept of ``Proof-of-Possession'' of an
+authentication or authorization secrete~\cite{RFC7800,
+I-D.ietf-oauth-pop-architecture, I-D.ietf-oauth-pop-key-distribution}.
+
+In this report, we explore the design space for the intended application, and also 
+provide a concise survey of ``Proof-of-Possession''. 
+
+
+
+\section{Related Work}
+Discuss related work here.
+
+\section{Methodology}
+Explain your methodology.
+
+\section{Results}
+Present your results.
+
+\section{Conclusion}
+Summarize your work and conclude.
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{techreport}
+
+\end{document}
